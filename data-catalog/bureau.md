@@ -23,5 +23,3 @@
 | CREDIT_TYPE            | "Type of Credit Bureau credit (Car, cash,...)"                                                                     |                                       |
 | DAYS_CREDIT_UPDATE     | How many days before loan application did last information about the Credit Bureau credit come                     | time only relative to the application |
 | AMT_ANNUITY            | Annuity of the Credit Bureau credit                                                                                |                                       |
-
-
