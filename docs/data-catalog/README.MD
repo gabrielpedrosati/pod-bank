@@ -1,5 +1,5 @@
 # Modelagem dos Dados
 
-!['modelagem'](../imgs/home-credit.png)
+!['modelagem'](../docs/imgs/home-credit.png)
 
 
