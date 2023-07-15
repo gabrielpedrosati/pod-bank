@@ -26,5 +26,8 @@ project
 |   |   s3.tf
 |   |   variables.tf
 |   └───json-policy
+|       |   engenharia-de-dados-services.json
+|   └───json-roles
 |       |   emr.json
+
 ```

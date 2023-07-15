@@ -29,8 +29,7 @@ variable "s3_bucket_datalake_curated" {
 // Default tags
 variable "default_tags" {
   default = {
-    company    = "PoD Bank"
-    project    = "Datalake"
-    managed-by = "Terraform"
+    Empresa = "PoD Bank"
+    Projeto = "Datalake"
   }
 }

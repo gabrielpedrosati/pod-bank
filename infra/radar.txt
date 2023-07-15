@@ -1,0 +1,19 @@
+14.07.2023
+
+# Geral
+    - validar nome do serviços
+
+# IAM 
+    - criar policy para grupo de BI
+    - validar serviços utilizados pela equipe de engenharia de dados (emr, glue, eventbridge, stepfunctions, athena, s3)
+
+# Glue Tables
+    - definir schedule dos crawlers;
+    - definir tabelas que armazenarão as variáveis;
+
+# EMR
+    - Como iremos lidar com o armazenamento de novos arquivos (na verificação de arquivos já existentes com o mesmo nome...)
+    - Verificar possibilidade de utilizar lambda para startar um cluster EMR e adicionar os steps dentro do cluster.
+
+# Lambda
+    - Cobrar ao gestor técnico as credenciais para a conta do repositório S3 da PoD Bank.
