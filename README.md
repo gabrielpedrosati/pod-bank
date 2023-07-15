@@ -4,18 +4,18 @@
 ```
 project
 |   README.md
+|   .gitignore
 └───docs
 |   └───data-catalog
 |   |   |   README.md
 |   |   |   application-train-test.md
 |   |   |   bureau-balance.md
-|   |   |   bureau.md
-|   |   |   credit-card-balance.md
-|   |   |   installment-payments.md
+|   |   |   ...
 |   |   |   pos-cash-balance.md
 |   |   |   previous-application.md
 |   └───imgs
 |   |   |   datalake-architecture.png
+|   |   |   datalake.gif
 |   |   |   home-credit.png
 └───infra
 |   |   README.md
@@ -29,5 +29,8 @@ project
 |       |   engenharia-de-dados-services.json
 |   └───json-roles
 |       |   emr.json
+└───src
+|   |   lambda-ingestao.py
+|   |   requirements.txt
 
 ```
