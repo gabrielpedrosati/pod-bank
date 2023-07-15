@@ -1,3 +1,3 @@
 # Data Lake Architecture
 
-![](../docs/imgs/datalake-architecture.png)
+![](../docs/imgs/datalake.svg)
