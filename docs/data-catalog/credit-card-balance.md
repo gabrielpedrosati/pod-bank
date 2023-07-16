@@ -1,5 +1,11 @@
 # credit_card_balance.csv
 
+Descrição:
+
+- Monthly balance snapshots of previous credit cards that the applicant has with Home Credit.
+
+- This table has one row for each month of history of every previous credit in Home Credit (consumer credit and cash loans) related to loans in our sample – i.e. the table has (#loans in sample * # of relative previous credit cards * # of months where we have some history observable for the previous credit card) rows.
+
 | Row                        | description                                                                                                                                       | special                               |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
 | SK_ID_PREV                 | ID of previous credit in Home credit related to loan in our sample. (One loan in our sample can have 0,1,2 or more previous loans in Home Credit) | hashed                                |

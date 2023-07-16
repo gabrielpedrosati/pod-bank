@@ -1,8 +1,10 @@
 # Previous Application
 
+Descrição:
 
+- All previous applications for Home Credit loans of clients who have loans in our sample.
 
-
+- There is one row for each previous application related to loans in our data sample.
 
 | Row                         | description                                                                                                                                                                                                                                                         | special                               |
 |:--------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:-------------------------------------:|
@@ -43,9 +45,6 @@
 | DAYS_LAST_DUE_1ST_VERSION   | Relative to application date of current application when was the first due of the previous application                                                                                                                                                              | time only relative to the application |
 | DAYS_LAST_DUE               | Relative to application date of current application when was the last due date of the previous application                                                                                                                                                          | time only relative to the application |
 | DAYS_TERMINATION            | Relative to application date of current application when was the expected termination of the previous application                                                                                                                                                   | time only relative to the application |
-| NFLAG_INSURED_ON_APPROVAL   |  Did the client requested insurance during the previous application
-                                                                                                                                                                                                                                                                   |                                       |
-|                             |                                                                                                                                                                                                                                                                     |                                       |
-|                             |                                                                                                                                                                                                                                                                     |                                       |
+| NFLAG_INSURED_ON_APPROVAL   | Did the client requested insurance during the previous application                                                                                                                                                                                                  |                                       |
 
 

@@ -1,6 +1,10 @@
 # Bureau Balance
 
+Descrição:
 
+- Monthly balances of previous credits in Credit Bureau.
+
+- This table has one row for each month of history of every previous credit reported to Credit Bureau – i.e the table has (#loans in sample * # of relative previous credits * # of months where we have some history observable for the previous credits) rows.
 
 | Row            | description                                                                                                                                                                                                                                      | special                               |
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------- |

@@ -1,6 +1,10 @@
 # pos_cash_balance.csv
 
+Descrição:
 
+- Monthly balance snapshots of previous POS (point of sales) and cash loans that the applicant had with Home Credit.
+
+- This table has one row for each month of history of every previous credit in Home Credit (consumer credit and cash loans) related to loans in our sample – i.e. the table has (#loans in sample * # of relative previous credits * # of months in which we have some history observable for the previous credits) rows.
 
 | Row                   | description                                                                                                                                                                                                                                                    | special                               |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |

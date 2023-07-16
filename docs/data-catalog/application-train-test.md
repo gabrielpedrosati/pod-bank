@@ -1,8 +1,10 @@
 # Application {train|test}
 
+Descrição:
 
+- This is the main table, broken into two files for Train (with TARGET) and Test (without TARGET).
 
-
+- Static data for all applications. One row represents one loan in our data sample.
 
 | Row                          | description                                                                                                                                                                                                                                                                          | special                               |
 |:---------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |:-------------------------------------:|
@@ -128,7 +130,3 @@
 | AMT_REQ_CREDIT_BUREAU_MON    | Number of enquiries to Credit Bureau about the client one month before application (excluding one week before application)                                                                                                                                                           |                                       |
 | AMT_REQ_CREDIT_BUREAU_QRT    | Number of enquiries to Credit Bureau about the client 3 month before application (excluding one month before application)                                                                                                                                                            |                                       |
 | AMT_REQ_CREDIT_BUREAU_YEAR   | Number of enquiries to Credit Bureau about the client one day year (excluding last 3 months before application)                                                                                                                                                                      |                                       |
-
-
-
-
