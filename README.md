@@ -1,6 +1,12 @@
 # pod-bank
 
-## Project Folder Structure
+## Introdução
+
+## Dependências e Requisitos
+
+## Pré-requisitos
+
+## Estruturas de Pastas do Projeto
 ```
 project
 |   README.md
@@ -34,3 +40,17 @@ project
 |   |   requirements.txt
 
 ```
+
+## Configuração do Ambiente
+
+## Serviços e Recursos
+
+## Dados
+
+## Arquitetura
+
+## Modelagem dos Dados
+
+## Processo de ETL
+
+## Validação de Integridade dos Dados
