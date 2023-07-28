@@ -11,6 +11,9 @@ resource "aws_emr_cluster" "cluster" {
   release_label = var.emr_release
   applications  = var.emr_applications
   service_role  = aws_iam_role.emr_service_role.arn
+  auto_termination_policy = {
+    idle_timeout = 3600
+  }
 
   termination_protection            = false
   step_concurrency_level            = 1
