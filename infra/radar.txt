@@ -1,24 +1,7 @@
 14.07.2023
 
 # Geral
-    - validar nome do serviços
-    - Padrão de nome dos serviços ({produto}-{ambiente}-{camada})
-    - Inserir um data quality
-    - Definir default_tags
-
-# Data quality
-    - Será iniciado via Lambda assim que um novo arquivo cair na camada Raw.
-    - Salvar os dados na trusted em Parquet - compactação Snappy.
-    - Ler arquivo de configuração
-    - Ler arquivos no bucket
-    - Validar arquivo na configuração
-    - Validar expectativas 
-
-# S3
-    - Versionamento de arquivos (importante para Trusted e Refined)
-    - Deixar privados
-    - Criar buckets awsresources (irá armazenar tudo que os serviços precisam armazenar, exemplo: query Athena)
-    - Criar bucket resources (arquivos de configuração, scripts do emr...)
+    - validar nome do serviços - pod-bank-{servico}-{identificador}
 
 # IAM 
     - criar policy para grupo de BI
