@@ -1,6 +1,5 @@
 # pod-bank
-
-![](C:\Users\gabri\OneDrive\Documentos\Dev\Hackaton\pod-bank\docs\imgs\logo.png)
+![](./docs/imgs/logo.png)
 
 ## Introdução
 
