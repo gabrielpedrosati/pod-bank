@@ -1,5 +1,7 @@
 # pod-bank
 
+![](C:\Users\gabri\OneDrive\Documentos\Dev\Hackaton\pod-bank\docs\imgs\logo.png)
+
 ## Introdução
 
 Este projeto aborda o desenvolvimento de um Data Lake para a empresa PoD Bank que atenda os seguintes requisitos:
