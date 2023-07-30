@@ -25,47 +25,43 @@ Cartao Credito (Ao longo do tempo)
 
 Cadastro / Informações Pessoais
 
-| Nome                                        | Descrição | Idade |
-| ------------------------------------------- | --------- | ----- |
-| SK_ID_CURR                                  |           |       |
-| Genero(CODE_GENDER)                         |           |       |
-| Possui_Carro(FLAG_OWN_CAR)                  |           |       |
-| Possui_Propriedade(FLAG_OWN_REALTY)         |           |       |
-| Quantidade_Filhos(CNT_CHILDREN)             |           |       |
-| Renda_Total(AMT_INCOME_TOTAL)               |           |       |
-| Tipo_Renda(NAME_INCOME_TYPE)                |           |       |
-| Nivel_Educacao(NAME_EDUCATION_TYPE)         |           |       |
-| Estado_Civil(NAME_FAMILY_STATUS)            |           |       |
-| Tipo_Habitacao(NAME_HOUSING_TYPE)           |           |       |
-| Idade(DAYS_BIRTH)                           |           |       |
-| Dias_Empregado(DAYS_EMPLOYED) (Se trabalha) |           |       |
-| Cargo (OCCUPATION_TYPE)                     |           |       |
-| Quantidade_Membros_Familia(CNT_FAM_MEMBERS) |           |       |
-| Ramo_Empresarial (ORGANIZATION_TYPE)        |           |       |
-|                                             |           |       |
+| Nome                                                                         | Descrição | Idade |
+| ---------------------------------------------------------------------------- | --------- | ----- |
+| SK_ID_CURR                                                                   |           |       |
+| Genero(CODE_GENDER) v                                                        |           |       |
+| Possui_Carro(FLAG_OWN_CAR)                                                   |           |       |
+| Possui_Propriedade(FLAG_OWN_REALTY)                                          |           |       |
+| Quantidade_Filhos(CNT_CHILDREN)                                              |           |       |
+| Renda_Total(AMT_INCOME_TOTAL) - puxar da temp view credit_card               |           |       |
+| Tipo_Renda(NAME_INCOME_TYPE)- puxar da temp view credit_card                 |           |       |
+| Nivel_Educacao(NAME_EDUCATION_TYPE) - - puxar da temp view educacao          |           |       |
+| Estado_Civil(NAME_FAMILY_STATUS)                                             |           |       |
+| Tipo_Habitacao(NAME_HOUSING_TYPE)- puxar da temp view imovel                 |           |       |
+| Idade(DAYS_BIRTH)                                                            |           |       |
+| Dias_Empregado(DAYS_EMPLOYED) (Se trabalha) - puxar da temp view credit_card |           |       |
+| Cargo (OCCUPATION_TYPE)- puxar da temp view emprego                          |           |       |
+| Quantidade_Membros_Familia(CNT_FAM_MEMBERS)                                  |           |       |
+| Ramo_Empresarial (ORGANIZATION_TYPE)- puxar da temp view emprego             |           |       |
+|                                                                              |           |       |
 
 Emprestimo
 
-| SK_ID_CURR                                         |                                                                    |     |
-| -------------------------------------------------- | ------------------------------------------------------------------ | --- |
-| Pago(TARGET)                                       |                                                                    |     |
-| Tipo_Emprestimo(NAME_CONTRACT_TYPE)                |                                                                    |     |
-| Montante_Emprestimo(AMT_CREDIT)                    |                                                                    |     |
-| Valor_Parcela_Emprestimo(AMT_ANNUITY)              |                                                                    |     |
-| Preco_Bens(AMT_GOODS_PRICE)                        | Preço dos bens para os quais o empréstimo está sendo solicitado    |     |
-| Tipo_Conjunto_Pessoas(NAME_TYPE_SUITE)             | Tipo de conjunto de pessoas que aconpanham o cliente no empréstimo |     |
-| Dia_Semana_Solicitacao(WEEKDAY_APPR_PROCESS_START) | Dia da semana em que o pedido de empréstimo foi iniciado           |     |
-| Hora_Solicitacao(HOUR_APPR_PROCESS_START)          |                                                                    |     |
-| Qtd_Documentos_Informados(FLAG_DOCUMENT)           |                                                                    |     |
-|                                                    |                                                                    |     |
+| SK_ID_CURR                                                                      |                                                                    |     |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------ | --- |
+| Pago(TARGET) - temp view financeiro                                             |                                                                    |     |
+| Tipo_Contrato(NAME_CONTRACT_TYPE) - temp view financeiro                        |                                                                    |     |
+| Valor_emprestimo_concedido(AMT_CREDIT)- temp view financeiro                    |                                                                    |     |
+| Valor_Anuidade_emprestimo(AMT_ANNUITY)- temp view financeiro                    |                                                                    |     |
+| Valor_bens(AMT_GOODS_PRICE)- temp view financeiro                               | Preço dos bens para os quais o empréstimo está sendo solicitado    |     |
+| Acompanhantes_Cliente(NAME_TYPE_SUITE)- temp view financeiro                    | Tipo de conjunto de pessoas que aconpanham o cliente no empréstimo |     |
+| Dia_Semana_Solicitacao(WEEKDAY_APPR_PROCESS_START)- temp view financeiro        | Dia da semana em que o pedido de empréstimo foi iniciado           |     |
+| Hora_Solicitacao(HOUR_APPR_PROCESS_START)- temp view financeiro                 |                                                                    |     |
+| Qtd_Documentos_Informados(FLAG_DOCUMENT) - - temp view bronze_application_train |                                                                    |     |
+|                                                                                 |                                                                    |     |
 
 Pedidos de Empréstimo
 
-
-
 Histórico de Crédito / Bureau
-
-
 
 Pagamentos e Atrasos (Inadimplencia)
 
