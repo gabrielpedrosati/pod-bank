@@ -8,6 +8,8 @@
 
 ## Cartao Credito (Ao longo do tempo)
 
+`credit_card_balance.csv`: Contém informações sobre o histórico de pagamentos de cartões de crédito anteriores dos candidatos, incluindo detalhes sobre o limite do cartão, o saldo, os pagamentos mínimos, entre outros
+
 | Coluna                                                      | Descrição                                                                                                                                                         |     |
 | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | --- |
 | SK_ID_CURR                                                  | ID do Cliente                                                                                                                                                     |     |
@@ -48,6 +50,12 @@
 
 ## Emprestimo
 
+Empréstimos atuais (aprovados / negados) e empréstimos anteriores
+
+    app_train - contém informações sobre os candidatos a empréstimos que foram aprovados ou negados.
+
+    previous_application - empréstimos anteriores solicitados pelos candidatos à Home Credit.Inclui detalhes como o valor do empréstimo anterior, o motivo da solicitação, o resultado da solicitação, entre outros.
+
 | SK_ID_CURR                                                                      |                                                                           |                                                                                                                                                                                                                                                                |
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Pago(TARGET) - temp view financeiro                                             | TARGET, que indica se o candidato entrou em inadimplência (1) ou não (0). | The column description csv file describes the Target field as follows:<br/><br/>1 - client with payment difficulties: he/she had late payment more than X days on at least one of the first Y installments of the loan in our sample<br/>0 - all other case |
@@ -61,11 +69,19 @@
 | Qtd_Documentos_Informados(FLAG_DOCUMENT) - - temp view bronze_application_train |                                                                           |                                                                                                                                                                                                                                                                |
 |                                                                                 |                                                                           |                                                                                                                                                                                                                                                                |
 
+## Pagamentos Empréstimo
+
+installments_payment - informações sobre os pagamentos mensais realizados pelos candidatos em empréstimos anteriores.
+
+
+
 ## Histórico de Crédito / Bureau
 
-    Bureau - 
 
-    Bureau balance - 
+
+    Bureau - Histórico de empréstimos anteriores ods candidatos junto a outros credores.Esse arquivo pode conter detalhes sobre pagamentos, atrasos e outros dados relacionados ao histórico de crédito do candidato
+
+    Bureau balance - `bureau_balance.csv`: É um arquivo auxiliar que contém informações mensais sobre o status dos empréstimos anteriores do arquivo `bureau.csv`. Ele inclui detalhes sobre pagamentos atrasados, pagamentos realizados, entre outros.
 
 |                                        |                                                                                                                                                                                                                                                                                                                                                            |
 | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -74,8 +90,8 @@
 | CREDIT_CURRENCY                        | Moeda em que o empréstimo foi concedido                                                                                                                                                                                                                                                                                                                    |
 | DAYS_CREDIT                            | Número de dias desde que o empréstimo foi solicitado                                                                                                                                                                                                                                                                                                       |
 |                                        |                                                                                                                                                                                                                                                                                                                                                            |
-| DAYS_CREDIT_ENDDATE                    | O número de dias restantes até que o empréstimo expire                                                                                                                                                                                                                                                                                                     |
-| DAYS_ENDDATE_FACT                      | O número de dias desde que o empréstimo expirou ou foi fechado                                                                                                                                                                                                                                                                                             |
+|                                        |                                                                                                                                                                                                                                                                                                                                                            |
+|                                        |                                                                                                                                                                                                                                                                                                                                                            |
 | AMT_CREDIT_MAX_OVERDUE                 | O valor máximo de atraso no pagamento do empréstimo.                                                                                                                                                                                                                                                                                                       |
 | CNT_CREDIT_PROLONG                     | O número de vezes que o cliente prolongou o empréstimo.                                                                                                                                                                                                                                                                                                    |
 | AMT_CREDIT_SUM                         | O montante total do empréstimo                                                                                                                                                                                                                                                                                                                             |
@@ -95,8 +111,10 @@
 
 Pagamentos e Atrasos (Inadimplencia)
 
-|                    | O número de dias em que o empréstimo está em atraso |     |
-| ------------------ | --------------------------------------------------- | --- |
-| CREDIT_DAY_OVERDUE |                                                     |     |
-|                    |                                                     |     |
-|                    |                                                     |     |
+| SK_BUREAU_ID        |                                                        |
+| ------------------- | ------------------------------------------------------ |
+| SK_ID_CURR          |                                                        |
+| CREDIT_DAY_OVERDUE  | O número de dias em que o empréstimo está em atraso    |
+| DAYS_CREDIT_ENDDATE | O número de dias restantes até que o empréstimo expire |
+|                     |                                                        |
+|                     |                                                        |
