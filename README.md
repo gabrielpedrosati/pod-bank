@@ -1,4 +1,5 @@
 # pod-bank
+
 ![](./docs/imgs/logo.png)
 
 ## Introdução
@@ -15,15 +16,9 @@ Este projeto aborda o desenvolvimento de um Data Lake para a empresa PoD Bank qu
 
 Essa área de Engenharia de Dados atenderá a seguinte área de negócio: Business Intelligence (o famoso BI).
 
-## Dependências do Projeto
-
-#TO-DO
-
-Great_Expectations
-
 ## Pré-requisitos
 
-Antes de executar esse projeto, é necessário ter os seguintes requisitos instalados na sua máquina:
+Antes de executar esse projeto, é necessário ter as credenciais de uma conta da AWS e os seguintes requisitos instalados na sua máquina:
 
 - [AWS CLI ](https://aws.amazon.com/cli/);
 
@@ -58,8 +53,6 @@ project
 ```
 
 ## Configuração do Ambiente
-
-#TO-DO: Explicação da configuração do ambiente
 
 1. Clonar repositório:
 
@@ -118,6 +111,10 @@ terraform destroy
 
 ## Dados
 
+Os dados podem ser vistos em [`/docs/data-catalog/`](https://github.com/gabrielpedrosati/pod-bank/tree/main/docs/data-catalog) .
+
+![](./docs/imgs/home-credit.png)
+
 ## Arquitetura
 
 ![](./docs/imgs/datalake.gif)
@@ -133,9 +130,3 @@ Os repositórios estão seguindo o padrão "[Medallion Architecture](https://www
 | Gold      | Bucket de dados refinados e curados após o processamento e enriquecidos com regras de negócio. |
 | Services  | Armazena dados dos serviços - logs, dados de saída, consultas...                               |
 | Resources | Armazena utilitários: arquivos de configuração, scripts...                                     |
-
-## Modelagem dos Dados
-
-## Processo de ETL
-
-## Validação de Integridade dos Dados
