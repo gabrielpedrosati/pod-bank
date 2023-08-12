@@ -111,7 +111,7 @@ terraform destroy
 
 ## Dados
 
-Os dados podem ser vistos em [`/docs/data-catalog/`](https://github.com/gabrielpedrosati/pod-bank/tree/main/docs/data-catalog) .
+O catálogo dos dados podem ser vistos em [`/docs/data-catalog/`](https://github.com/gabrielpedrosati/pod-bank/tree/main/docs/data-catalog) .
 
 ![](./docs/imgs/home-credit.png)
 
